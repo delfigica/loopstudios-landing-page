@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+.banner-box {
+  background-image: url(/images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 1250px;
+  height: 80vh;
+  padding: 2em 5em;
+}
+
+.logo-box {
+  width: 150px;
+}
+
+.navbar-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links-box {
+  display: flex;
+  color: white;
+}
+
+.navbar-links-box p {
+  margin: 0px 15px;
+  font-family: "Alata", sans-serif;
+  border: 0px;
+}
+
+.navbar-links-box p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.banner-text-box {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.banner-text-box h2 {
+  border: 2px solid white;
+  color: white;
+  font-size: 3em;
+  padding: 0.5em;
+  width: 450px;
+}
+.navbar-responsive-img-box {
+  display: none;
+}
+
+.navbar-responsive {
+  background-color: black;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  padding: 2em 1em;
+  display: none;
+}
+
+.menu-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close-menu {
+  margin: 0px 20px;
+}
+
+.navbar-responsive-links {
+  color: white;
+  font-family: "Alata", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.navbar-responsive-links p {
+  margin: 10px 0px;
+  font-size: 1.3em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .navbar-links-box {
+    display: none;
+  }
+  .banner-box {
+    background-position: center;
+    background-size: 1300px;
+    height: 100vh;
+    padding: 2em;
+  }
+  .banner-text-box h2 {
+    width: 300px;
+    font-size: 2em;
+  }
+  .navbar-responsive-img-box {
+    display: inline;
+    width: 25px;
+    margin: 0px 10px;
+  }
+}
+
+.interactive-box {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interactive-img-box {
+  width: 500px;
+  position: relative;
+  left: 100px;
+}
+
+.interactive-text-box {
+  background-color: white;
+  width: 600px;
+  padding: 4em;
+  position: relative;
+  top: 120px;
+}
+
+.interactive-text-box h3 {
+  font-size: 2.5em;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.interactive-text-box p {
+  font-family: "Alata", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 25px 0px;
+  color: hsl(0, 0%, 41%);
+}
+
+@media (max-width: 600px) {
+  .interactive-box {
+    flex-direction: column;
+    padding: 1em;
+    margin: 40px 0px;
+  }
+  .interactive-img-box {
+    width: 300px;
+    left: 0;
+  }
+  .interactive-text-box {
+    top: 0;
+    width: 90%;
+    padding: 0;
+    text-align: center;
+  }
+  .interactive-text-box h3 {
+    font-size: 1.8em;
+    margin: 25px 0px;
+  }
+}
+
+.creations-box {
+  min-height: 100vh;
+  width: 75%;
+  margin: 50px auto;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.creations-text-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.creations-text-box h3 {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.creations-text-box button,
+.btn-creation-responsive {
+  border-style: none;
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 800;
+  color: black;
+}
+.btn-creation-responsive {
+  display: none;
+}
+
+.creations-text-box button:hover {
+  background-color: black;
+  color: white;
+}
+
+.creations-card-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-repeat: no-repeat;
+  background-size: 210px;
+  background-color: black;
+  margin: 10px 0px;
+}
+
+.card-box {
+  width: 210px;
+  height: 340px;
+  color: white;
+  display: flex;
+  align-items: end;
+  padding: 2em;
+}
+
+.card-box:hover {
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: rgba(249, 249, 249, 0.253);
+}
+
+.card p {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+#earth {
+  background-image: url(/images/desktop/image-deep-earth.jpg);
+}
+
+#arcade {
+  background-image: url(/images/desktop/image-night-arcade.jpg);
+}
+
+#soccer {
+  background-image: url(/images/desktop/image-soccer-team.jpg);
+}
+
+#grid {
+  background-image: url(/images/desktop/image-grid.jpg);
+}
+
+#above {
+  background-image: url(/images/desktop/image-from-above.jpg);
+}
+
+#borealis {
+  background-image: url(/images/desktop/image-pocket-borealis.jpg);
+}
+
+#curiosity {
+  background-image: url(/images/desktop/image-curiosity.jpg);
+}
+
+#fisheye {
+  background-image: url(/images/desktop/image-fisheye.jpg);
+}
+
+@media (max-width: 600px) {
+  .creations-box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .creations-text-box button {
+    display: none;
+  }
+  .creations-text-box h3 {
+    margin: auto;
+  }
+  .card {
+    margin: 10px 0px;
+    background-size: 410px;
+    background-position: center;
+  }
+  .card-box {
+    width: 280px;
+    height: 150px;
+  }
+  .btn-creation-responsive {
+    display: block;
+    margin: 15px auto;
+  }
+  #earth {
+    background-image: url(/images/mobile/image-deep-earth.jpg);
+  }
+
+  #arcade {
+    background-image: url(/images/mobile/image-night-arcade.jpg);
+  }
+
+  #soccer {
+    background-image: url(/images/mobile/image-soccer-team.jpg);
+  }
+
+  #grid {
+    background-image: url(/images/mobile/image-grid.jpg);
+  }
+
+  #above {
+    background-image: url(/images/mobile/image-from-above.jpg);
+  }
+
+  #borealis {
+    background-image: url(/images/mobile/image-pocket-borealis.jpg);
+  }
+
+  #curiosity {
+    background-image: url(/images/mobile/image-curiosity.jpg);
+  }
+
+  #fisheye {
+    background-image: url(/images/mobile/image-fisheye.jpg);
+  }
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Alata", sans-serif;
+  padding: 2em 6em;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-items-box {
+  display: flex;
+  margin: 15px 0px;
+  justify-content: space-between;
+  width: 400px;
+}
+.footer-items-left {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.footer-social-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+}
+
+.register-footer {
+  font-size: 0.8em;
+  color: hsl(0, 0%, 41%);
+  margin: 15px 0px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    padding: 3em 1em;
+    align-items: center;
+  }
+  .footer-items-box {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .footer-items-box p {
+    margin: 10px 0px;
+  }
+  .footer-items-left {
+    align-items: center;
+  }
+}
