@@ -13,9 +13,10 @@ img {
 .banner-box {
   background-image: url("./images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
-  background-size: 1500px;
+  background-size: cover;
+  filter: grayscale(10%);
   height: 80vh;
-  padding: 2em 5em;
+  padding: 4em 5em;
 }
 
 .logo-box {
@@ -26,6 +27,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* padding: 4em 6em; */
 }
 
 .navbar-links-box {
@@ -54,11 +56,12 @@ img {
 }
 
 .banner-text-box h2 {
-  border: 2px solid white;
+  border: 1px solid white;
   color: white;
   font-size: 3em;
   padding: 0.5em;
   width: 450px;
+  font-weight: lighter;
 }
 .navbar-responsive-img-box {
   display: none;
@@ -135,7 +138,7 @@ img {
 }
 
 .interactive-img-box {
-  width: 500px;
+  width: 650px;
   position: relative;
   left: 100px;
 }
@@ -143,9 +146,10 @@ img {
 .interactive-text-box {
   background-color: white;
   width: 600px;
-  padding: 4em;
+  padding: 5em;
   position: relative;
-  top: 120px;
+  top: 140px;
+  left: -40px;
 }
 
 .interactive-text-box h3 {
@@ -156,9 +160,10 @@ img {
 }
 
 .interactive-text-box p {
-  font-family: "Alata", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: bold;
+  line-height: 1.5;
   margin: 25px 0px;
   color: hsl(0, 0%, 41%);
 }
@@ -191,7 +196,11 @@ img {
   margin: 50px auto;
   font-family: "Josefin Sans", sans-serif;
 }
-
+@media (min-width: 1050px) {
+  .creations-box {
+    width: 55%;
+  }
+}
 .creations-text-box {
   display: flex;
   justify-content: space-between;
@@ -231,14 +240,16 @@ img {
 
 .card {
   background-repeat: no-repeat;
-  background-size: 210px;
+  /* background-size: 250px; */
   background-color: black;
-  margin: 10px 0px;
+  width: 240px;
+  height: 440px;
+  margin: 15px 0;
 }
 
 .card-box {
-  width: 210px;
-  height: 340px;
+  width: 240px;
+  height: 440px;
   color: white;
   display: flex;
   align-items: end;
