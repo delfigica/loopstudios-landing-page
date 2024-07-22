@@ -14,7 +14,6 @@ img {
   background-image: url("./images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(10%);
   height: 80vh;
   padding: 4em 5em;
 }
@@ -115,7 +114,7 @@ img {
   }
   .banner-box {
     background-position: center;
-    background-size: 1300px;
+    background-size: cover;
     height: 100vh;
     padding: 2em;
   }
@@ -183,6 +182,7 @@ img {
     width: 90%;
     padding: 0;
     text-align: center;
+    left: 0;
   }
   .interactive-text-box h3 {
     font-size: 1.8em;
@@ -314,9 +314,11 @@ img {
     margin: auto;
   }
   .card {
-    margin: 10px 0px;
+    margin: 10px auto;
     background-size: 410px;
     background-position: center;
+    width: 90%;
+    height: 150px;
   }
   .card-box {
     width: 280px;
